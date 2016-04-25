@@ -1,9 +1,8 @@
-#name : #ifndef XXX; #define XXX; #endif
+# -*- mode: snippet -*-
+# name : #ifndef XXX; #define XXX; #endif
 # key: once
 # --
-#ifndef ${1:`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`_H}
+#ifndef ${1:`(replace-regexp-in-string "\\." "_" (upcase (file-name-nondirectory (buffer-file-name))))`}
 #define $1
-
-$0
-
+`yas-selected-text`$0
 #endif /* $1 */

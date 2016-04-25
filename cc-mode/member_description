@@ -4,4 +4,4 @@
 #key: !<
 #group: doxygen
 # --
-/*!< ${1:Detailed description after the member} */
+//!< ${1:Description after the member}

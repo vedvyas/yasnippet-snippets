@@ -2,7 +2,9 @@
 # name : #ifndef XXX; #define XXX; #endif
 # key: once
 # --
-#ifndef ${1:`(replace-regexp-in-string "\\." "_" (upcase (file-name-nondirectory (buffer-file-name))))`}
+#ifndef ${1:`(replace-regexp-in-string "[^[:alnum:]]" "_" (upcase (file-name-nondirectory (buffer-file-name))))`}
 #define $1
+
 `yas-selected-text`$0
+
 #endif /* $1 */

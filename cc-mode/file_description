@@ -8,7 +8,7 @@
  *  \file ${1:`(file-name-nondirectory(buffer-file-name))`}
  *  \brief ${2:A Documented file}${3:
  *  \author ${4:`user-full-name`}}${5:
- *  \date ${6:`(substring (shell-command-to-string "date +'%b %e %Y'") 0 -1)`}}${7:
+ *  \date ${6:`(substring (shell-command-to-string "date +'%b %-e %Y'") 0 -1)`}}${7:
  *
  *  ${8:Detailed description}
  *
